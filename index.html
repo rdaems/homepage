@@ -26,21 +26,21 @@
             <div class="bookmark-set">
                 <div class="bookmark-title">Entertainment</div>
                 <div class="bookmark-inner-container">
-                    <a class="bookmark" href="http://192.168.1.39:8096">Emby</a>
+                    <a class="bookmark" href="http://192.168.2.4:8096">Emby</a>
                     <a class="bookmark" href="https://www.netflix.com">Netflix</a>
                     <a class="bookmark" href="https://www.youtube.com">Youtube</a>
-                    <a class="bookmark" href="http://192.168.1.2:8080/airsonic">Airsonic</a>
+                    <a class="bookmark" href="http://192.168.2.2:8080/airsonic">Airsonic</a>
                     <a class="bookmark" href="javascript:open_search()">Search Jackett</a>
                 </div>
             </div>
             <div class="bookmark-set">
                 <div class="bookmark-title">Services</div>
                 <div class="bookmark-inner-container">
-                    <a class="bookmark" href="http://192.168.1.39:7878">Radarr</a>
-                    <a class="bookmark" href="http://192.168.1.39:8989">Sonarr</a>
-                    <a class="bookmark" href="http://192.168.1.2:9117">Jackett</a>
-                    <a class="bookmark" href="http://192.168.1.2:9091">Transmission</a>
-                    <a class="bookmark" href="http://192.168.1.39:6767">Bazarr</a>
+                    <a class="bookmark" href="http://192.168.2.4:7878">Radarr</a>
+                    <a class="bookmark" href="http://192.168.2.4:8989">Sonarr</a>
+                    <a class="bookmark" href="http://192.168.2.2:9117">Jackett</a>
+                    <a class="bookmark" href="http://192.168.2.2:9091">Transmission</a>
+                    <a class="bookmark" href="http://192.168.2.4:6767">Bazarr</a>
                 </div>
             </div>
             <div class="bookmark-set">
@@ -48,8 +48,8 @@
                 <div class="bookmark-inner-container">
                     <a class="bookmark" href="#">Command Line Interface</a>
                     <a class="bookmark" href="#">Home Server Stats</a>
-                    <a class="bookmark" href="http://192.168.1.2/cgi/start_desktop">Start Desktop</a>
-                    <a class="bookmark" href="http://192.168.1.2/cgi/reboot">Reboot Home Server</a>
+                    <a class="bookmark" href="http://192.168.2.2/cgi/start_desktop">Start Desktop</a>
+                    <a class="bookmark" href="http://192.168.2.2/cgi/reboot">Reboot Home Server</a>
                 </div>
             </div>
         </div>
@@ -60,7 +60,7 @@
         function search(e) {
             if (e.keyCode == 13) {
                 var val = document.getElementById("search-field").value;
-                window.open("http://192.168.1.2:9117/UI/Dashboard#search=" + val);
+                window.open("http://192.168.2.2:9117/UI/Dashboard#search=" + val);
             }
         }
         // Get current time and format
